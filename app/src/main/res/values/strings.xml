@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">EcommerceConsept</string>
+    <string name="galaxy_note_20_ultra">Galaxy Note 20 Ultra</string>
+    <string name="select_color_and_capacity">Select color and capacity</string>
+    <string name="add_to_card_1_500_00">Add to card $1.500.00</string>
+    <string name="_256_gb">256 GB</string>
+    <string name="_128_gb">128 GB</string>
+    <string name="filter_options">Filter options</string>
+    <string name="done">Done</string>
+    <string name="brand">Brand</string>
+    <string name="prise">Prise</string>
+    <string name="size">Size</string>
+    <string name="novelty">New</string>
+    <string name="buy_now">Buy now!</string>
+    <string name="_1400">1400$</string>
+    <string name="samsung_galaxy_s20_ultra">Samsung Galaxy s20 Ultra</string>
+    <string name="zihuatanejo_gro">Zihuatanejo, Gro</string>
+    <string name="select_category">Select Category</string>
+    <string name="view_all">view_all</string>
+    <string name="search">search</string>
+    <string name="hot_sale">Hot Sale</string>
+    <string name="best_seller">Best Seller</string>
+    <string name="see_more">see more</string>
+    <string name="add_address">Add address</string>
+    <string name="my_cart">My Cart</string>
+    <string name="_6_000us">$6,000us</string>
+    <string name="total">Total</string>
+    <string name="delivery">Delivery</string>
+    <string-array name="Brand">
+        <item>Samsung</item>
+        <item>Iphone 12</item>
+        <item>Xiaomi</item>
+        <item>Honor</item>
+    </string-array>
+    <string-array name="Price">
+        <item>0 – 300$</item>
+        <item>300 – 500$</item>
+        <item>500 – 700$</item>
+        <item>700 – 1000$</item>
+    </string-array>
+    <string-array name="Size">
+        <item>4.5 to 5.5 inches</item>
+        <item>5.5 to 6.0 inches</item>
+        <item>6.0 to 6.5 inches</item>
+        <item>6.5 to 7.0 inches</item>
+    </string-array>
 </resources>

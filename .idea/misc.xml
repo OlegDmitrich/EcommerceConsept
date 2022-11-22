@@ -1,5 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable-v23/custom_tabs.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/chip_select_color.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/color_one.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/color_one_selected.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/color_two_selected.xml" value="0.191" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/custom_checkbox.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/custom_tabs.xml" value="0.1675" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_catching_pokemon_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_devices_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_menu_book_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_monitor_heart_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/ic_baseline_phone_android_24.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/icon_new.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/splash_screen.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/tab_backgroud_selector.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/tab_background_selector.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/drawable/tab_not_selected.xml" value="0.184" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/books_fragment.xml" value="0.190625" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/bottom_sheet_filter.xml" value="0.253125" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/computer_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/filter_fargment.xml" value="0.25416666666666665" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/health_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/item_rv_hot_sales.xml" value="0.4" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/item_rv_my_cart.xml" value="0.2795341098169717" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/item_rv_phone_fragment.xml" value="0.253125" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/mycart_fragment.xml" value="0.264" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/phone_tab_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/product_details_fragment.xml" value="0.176" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/select_category_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/some_fragment.xml" value="0.253125" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/splash.xml" value="0.176" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/tab_title.xml" value="0.25416666666666665" />
+        <entry key="..\:/EcommerceConsept/app/src/main/res/layout/text_for_image_new.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

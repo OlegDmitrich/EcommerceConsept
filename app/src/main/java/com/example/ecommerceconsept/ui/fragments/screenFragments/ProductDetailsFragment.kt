@@ -10,17 +10,16 @@ import coil.load
 import com.example.ecommerceconsept.R
 import com.example.ecommerceconsept.databinding.ProductDetailsFragmentBinding
 import com.example.ecommerceconsept.ui.fragments.tabsFragment.*
-import com.example.ecommerceconsept.ui.vpadapters.VPAdapter
 import com.example.ecommerceconsept.ui.vpadapters.VPAdapterDetails
-import com.example.ecommerceconsept.viewmodel.AppState
-import com.example.ecommerceconsept.viewmodel.DetailsViewModel
+import com.example.ecommerceconsept.ui.state.AppState
+import com.example.ecommerceconsept.ui.viewmodel.DetailsViewModel
 import com.google.android.material.tabs.TabLayoutMediator
-import java.io.DataInput
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class ProductDetailsFragment:Fragment(){
     private lateinit var binding: ProductDetailsFragmentBinding
     private lateinit var viewModelDetails: DetailsViewModel
-
+    private val vm by viewModel<DetailsViewModel>()
     private val fraglist = listOf(
 
         HealthFragment.newInstance(),
@@ -50,8 +49,9 @@ class ProductDetailsFragment:Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModelDetails = ViewModelProvider(this)[DetailsViewModel::class.java]
-        viewModelDetails.getDataDetails().observe(viewLifecycleOwner){state -> renderDetails(state)}
+        //viewModelDetails = ViewModelProvider(this)[DetailsViewModel::class.java]
+      //  viewModelDetails.getDataDetails().observe(viewLifecycleOwner){state -> renderDetails(state)}
+        vm.getDataDetails().observe(viewLifecycleOwner){state -> renderDetails(state)}
         tabs()
 
         binding.buttonBuy.setOnClickListener{

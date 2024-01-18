@@ -11,15 +11,17 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ecommerceconsept.R
-import com.example.ecommerceconsept.data.servdataphones.HomeStoreTwo
+import com.example.ecommerceconsept.domain.phonesEntites.HomeStoreTwo
 import com.example.ecommerceconsept.databinding.SelectCategoryFragmentBinding
 import com.example.ecommerceconsept.ui.fragments.filterFragment.FilterFragment
 import com.example.ecommerceconsept.ui.fragments.tabsFragment.*
-import com.example.ecommerceconsept.ui.rvadapters.RvHotSaleAdapter
+import com.example.ecommerceconsept.ui.rv.rvadapters.RvHotSaleAdapter
 import com.example.ecommerceconsept.ui.vpadapters.VPAdapter
-import com.example.ecommerceconsept.viewmodel.AppState
-import com.example.ecommerceconsept.viewmodel.PhonesViewModel
+import com.example.ecommerceconsept.ui.state.AppState
+import com.example.ecommerceconsept.ui.viewmodel.MyCartViewModel
+import com.example.ecommerceconsept.ui.viewmodel.PhonesViewModel
 import com.google.android.material.tabs.TabLayoutMediator
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import kotlin.math.roundToInt
 
 class SelectCategoryFragment: Fragment() {
@@ -33,6 +35,7 @@ class SelectCategoryFragment: Fragment() {
     )
    // private lateinit var bottomSheetBehavior: BottomSheetBehavior<CardView>
     private lateinit var hotViewModel: PhonesViewModel
+    private val vm by viewModel<PhonesViewModel>()
     private val rvAdapter = RvHotSaleAdapter()
     private lateinit var binding: SelectCategoryFragmentBinding
 
@@ -58,9 +61,9 @@ class SelectCategoryFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        hotViewModel = ViewModelProvider(this)[PhonesViewModel::class.java]
-        hotViewModel.getDataHomeStore().observe(viewLifecycleOwner){state ->reneder(state)}
-
+//        hotViewModel = ViewModelProvider(this)[PhonesViewModel::class.java]
+//        hotViewModel.getDataHomeStore().observe(viewLifecycleOwner){state ->reneder(state)}
+        vm.getDataHomeStore().observe(viewLifecycleOwner){state ->reneder(state)}
         initTabLayout()
         initRvAdapter()
        // testRv()

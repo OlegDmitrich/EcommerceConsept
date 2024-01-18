@@ -8,16 +8,16 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.ecommerceconsept.R
-import com.example.ecommerceconsept.data.servdataphones.HomeStore
-import com.example.ecommerceconsept.data.servdataphones.HomeStoreTwo
+import com.example.ecommerceconsept.domain.phonesEntites.HomeStore
+import com.example.ecommerceconsept.domain.phonesEntites.HomeStoreTwo
 import com.example.ecommerceconsept.databinding.PhoneTabFragmentBinding
 import com.example.ecommerceconsept.ui.fragments.screenFragments.ProductDetailsFragment
-import com.example.ecommerceconsept.ui.rvadapters.RvBestPhonesAdapter
-import com.example.ecommerceconsept.ui.rvadapters.RvClickListener
-import com.example.ecommerceconsept.viewmodel.AppState
-import com.example.ecommerceconsept.viewmodel.PhonesViewModel
+import com.example.ecommerceconsept.ui.rv.rvadapters.RvBestPhonesAdapter
+import com.example.ecommerceconsept.ui.rv.clicklistner.RvClickListener
+import com.example.ecommerceconsept.ui.state.AppState
+import com.example.ecommerceconsept.ui.viewmodel.PhonesViewModel
 
-class PhonesFragment:Fragment(),RvClickListener {
+class PhonesFragment:Fragment(), RvClickListener {
 
     private lateinit var binding: PhoneTabFragmentBinding
     private lateinit var phonesViewModel: PhonesViewModel

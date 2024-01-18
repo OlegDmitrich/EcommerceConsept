@@ -8,13 +8,16 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ecommerceconsept.databinding.MycartFragmentBinding
-import com.example.ecommerceconsept.ui.rvadapters.RvMyCartAdapter
-import com.example.ecommerceconsept.viewmodel.AppState
-import com.example.ecommerceconsept.viewmodel.MyCartViewModel
+import com.example.ecommerceconsept.ui.rv.rvadapters.RvMyCartAdapter
+import com.example.ecommerceconsept.ui.state.AppState
+import com.example.ecommerceconsept.ui.viewmodel.DetailsViewModel
+import com.example.ecommerceconsept.ui.viewmodel.MyCartViewModel
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MyCartFragment:Fragment() {
     private lateinit var binding: MycartFragmentBinding
-    private lateinit var myCartViewModel: MyCartViewModel
+ //   private lateinit var myCartViewModel: MyCartViewModel
+    private val vm by viewModel<MyCartViewModel>()
     private val myCartAdapter = RvMyCartAdapter()
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,8 +31,9 @@ class MyCartFragment:Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        myCartViewModel = ViewModelProvider(this)[MyCartViewModel::class.java]
-        myCartViewModel.getDataMyCart().observe(viewLifecycleOwner){state -> render(state)}
+//        myCartViewModel = ViewModelProvider(this)[MyCartViewModel::class.java]
+//        myCartViewModel.getDataMyCart().observe(viewLifecycleOwner){state -> render(state)}
+        vm.getDataMyCart().observe(viewLifecycleOwner){state -> render(state)}
         initAdapter()
     }
 

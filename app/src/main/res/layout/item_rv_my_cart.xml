@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_my_cart_item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="30dp"
+    app:cardBackgroundColor="#010035"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linear_my_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="30dp"
+            android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/image_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_1"
+            />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+
+            android:id="@+id/linear_description_hot_sale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/text_model"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/galaxy_note_20_ultra"
+                android:gravity="start"
+                android:textStyle="normal"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="$3000.00"
+                android:textSize="20sp"
+                android:textColor="#F44336"
+               />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="30dp"
+            android:layout_gravity="center|end"
+            app:cardBackgroundColor="#282843"
+            android:layout_marginStart="30dp">
+
+        <LinearLayout
+            android:id="@+id/linear_up_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <ImageButton
+              android:layout_weight="1"
+              android:id="@+id/image_up"
+              android:background="#080750"
+              android:src="@drawable/ic_baseline_add_24"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/text_count"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:background="#080750"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+            <ImageButton
+                android:id="@+id/image_down"
+                android:layout_weight="1"
+                android:background="#080750"
+                android:src="@drawable/ic_baseline_horizontal_rule_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
